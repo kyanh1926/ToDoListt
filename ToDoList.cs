@@ -23,8 +23,19 @@ namespace OOP2
 
                 Console.Write(i+": ");
                 Console.WriteLine(task.getDescription());
-                i ++;
+                i++;
             }
+        }
+
+        public Task UpdateTask(int i, string updateDescription)
+        {
+            tasks[i].setDescription(updateDescription);
+            return tasks[i];    
+        }
+
+        public void RemoveTask(int i)
+        {
+            tasks.RemoveAt(i);  
         }
     }
 }

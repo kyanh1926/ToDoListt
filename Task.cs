@@ -18,14 +18,17 @@ namespace OOP2
         {
             this.setDescription(description);
         }
-        public string getDescription() { 
+        public string getDescription() 
+        { 
             return description; 
         }
-        public void setDescription(string description) { 
+        public void setDescription(string description) 
+        { 
             this.description = description;
         }
-        public void displayTask() // làm hàm này nè
+        public void displayTask() 
         {
+            Console.WriteLine(getDescription());
         }
     }
 }
